@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #313131;
+}
+.slider{
+    width: 36.6vw;
+    height: 77vh;
+    background:url(questclub_2.jpeg) ;
+
+    /* margin: 100px auto; */
+    animation: slide 8s infinite;
+}
+@keyframes slide{
+    20%{
+        background: url(codathon_2.jpg);
+    }
+    40%{
+        background: url(codekaze_2.jpeg);
+    }
+    60%{
+        background: url(dance_2.jpeg);
+    }
+    80%{
+        background: url(hackmol_2.jpeg);
+    }
+    100%{
+        background: url(questclub_2.jpeg);
+    }
+}

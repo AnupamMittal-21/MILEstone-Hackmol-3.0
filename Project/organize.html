@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Images/icon.jpeg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="CSS/organize.css">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="Images/logo.jpeg"></a>
+
+                    <button img src="Images/menu-button-of-three-horizontal-lines.png" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+
+
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto text-right">
+                            <li class="nav-item ">
+                                <a class="nav-link active-home" aria-current="page" href="/index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/organize.html">ORGANISE AN EVENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">SPONSOR AN EVENT </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/loginactive.html">LOGIN/SIGN UP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    
+    <div class="box">
+        
+        <form>
+            <div class="header">
+                <p>Event Registration Form</p>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <p>Name of event </p>
+                </div>
+                <div class="col-4">
+                    <input type="text">
+                    <small></small>
+                </div>
+                <div class="col-4">
+                    <input type="text" class="ml-4">
+                    <small class="ml-4"></small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <p>EVENT TYPE</p>
+                </div>
+                <div class="col-8">
+                    <!-- <input type="text"> -->
+                    <select name="Event_type" id="Event_type" class="values">
+                        <option value="">---Select the type of event---</option>
+                        <option value="dance">Dance</option>
+                        <option value="music">Music</option>
+                        <option value="coding">Coding</option>
+                        <option value="sport">Sport</option>
+                        <option value="debate">Debate</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <p>Email</p>
+                </div>
+                <div class="col-8">
+                    <input type="email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    Phone
+                </div>
+                <div class="col-3">
+                    <input type="number">
+                    <small>Area Code</small>
+                </div>
+                <div class="col-5">
+                    <input type="number">
+                    <small>Phone Number</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <p>ABOUT EVENT</p>
+                </div>
+                <div class="col-8">
+                    <!-- <input type="text"  cols="80" rows="8"> -->
+                    <textarea name="about event" id="about event" class="values-2" cols="50" rows="3">
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <p>ELIGIBLE Candidates</p>
+                    <select name="eligible" id="eligible" class="values">
+                        <option value="">---Select---</option>
+                        <option value="first year">first year</option>
+                        <option value="second year">second year</option>
+                        <option value="third year">third year</option>
+                        <option value="final year">final year</option>
+                        <option value="all">all</option>
+                    </select>
+                    <p>LAST DATE</p>
+                       <input type="date" name="last" id="last" class="values">
+                    
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-danger">Register</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="about.html" target="_blank">about us</a></li>
+                <li><a href="services.html">our services</a></li>
+                <li><a href="privacypolicy.html" target="_blank">privacy policy</a></li>
+                <li><a href="favouritesponsor.html" target="_blank">our favourite sponsors</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>contact us</h4>
+            <ul>
+                <li><a href="#">organisers</a></li>
+                <li><a href="#">reception</a></li>
+                <li><a href="#">college representative</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" height="20px" alt="fb logo"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" height="20px" alt="twitter logo"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" height="20px" alt="instagram logo"> </i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" height="20px" alt="linkedin logo"></a>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

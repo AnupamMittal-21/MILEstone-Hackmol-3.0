@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="icon" href="Images/icon.jpeg">
+    <meta charset="utf-8">
+    <title>RSVP Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rsvp.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Register Here</h2>
+            <form id="register" action="index.html" method="post">
+                <label for="name">Your Name:</label><br>
+                <input required type="text" name="name" class="values" id="nameField" value="" placeholder="Enter Your Full Name"
+                    autofocus tabindex="6" />
+                <br><br>
+                <label id="genderField" for="gender">Gender:
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" value="">
+                    &nbsp;
+                    <span id="male">Male</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" value="">
+                    &nbsp;
+                    <span id="female">Female</span></label>
+                <br><br>
+                <label id="emailField" for="email">E-mail:<br>
+                    <input required type="email" name="email" class="values"  placeholder="Enter Your Valid Email"></label>
+                <br><br>
+                <label id="countrycode"  for="contact">Contact:<br>
+                    <select class="countrycode " name="countrycode">
+                        <option value="91">91</option>
+                        <option value="92">92</option>
+                        <option value="93">93</option>
+                        <option value="94">94</option>
+                        <option value="95">95</option>
+                        <option value="96">96</option>
+                        <option value="97">97</option>
+                        <option value="98">98</option>
+                    </select>
+                </label>
+                <input id="contactField" class="values" required type="phone" name="contact" placeholder="Contact Number">
+                <br><br>
+                <label id="yearField" for="year">Select Year:<br>
+                    <select class="year values" name="year">
+                        <option value="1">First Year Student</option>
+                        <option value="2">Second Year Student</option>
+                        <option value="3">Third Year Student</option>
+                        <option value="4">Fourth Year Student</option>
+                    </select></label><br><br>
+                <label id="branchField" for="branch">Select Branch:
+                    <br>
+                    <select class="branch values" name="">
+                        <option value="bt">Bio-Technology</option>
+                        <option value="cm">Chemical Engineering</option>
+                        <option value="ce">Civil Engineering</option>
+                        <option value="cs">Computer Science and Engineering</option>
+                        <option value="ee">Computer Science and Engineering</option>
+                        <option value="ec">Electronics Communication and Engineering</option>
+                        <option value="ip">Industrial Production and Engineering</option>
+                        <option value="it">Information Technology</option>
+                        <option value="ic">Instrumentation and Control Engineering</option>
+                        <option value="me">Mechanical Engineering</option>
+                        <option value="tt">Textile Technology</option>
+                    </select></label>
+                <br><br>
+                <label id="queryField" for="ques">Any Query/Suggestions Regarding the Event:<br>
+                    <textarea name="name" class="values-2" rows="3" cols="42"></textarea></label>
+                <br>
+                <input class="express-btn2" id="submitField" type="submit" name="submit" value="Submit" onclick="store()">
+            </form>
+        </div> 
+    </div>
+
+
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>

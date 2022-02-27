@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="icon" href="Images/icon.jpeg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/cssFile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+
+
+    <div id="login-box">
+        <div class="left">
+            <h1 id='status'>Login</h1>
+
+            <input type="text" id="email" name="email" placeholder="E-mail" />
+            <input type="password" id="password" name="password" placeholder="Password" />
+
+            <input type="submit" id='login' name="login" value="login" />
+            
+            <a href="signup_2.html"><input   type="submit" id='sighUp' name="sighUp" value="Sign Up"/></a>
+
+        </div>
+
+
+</body>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"; import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"; import {
+        getAuth, createUserWithEmailAndPassword,
+        signInWithEmailAndPassword, onAuthStateChanged, signOut
+    } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js"; const firebaseConfig = {
+        apiKey: "AIzaSyDlzTIWRIKsB4eo0QDejCHPHSOtan7jpO0", authDomain: "form-34f99.firebaseapp.com", projectId:
+            "form-34f99", storageBucket: "form-34f99.appspot.com", messagingSenderId: "723148530128", appId: "1:723148530128:web:29f051dcb71b25edffd9d5"
+    }; const app = initializeApp(firebaseConfig); const database = getDatabase(app); const auth = getAuth(); sighUp.addEventListener('click',
+        (e) => {
+            var email = document.getElementById('email').value; var password = document.getElementById('password').value; var username = document.getElementById('username').value; createUserWithEmailAndPassword(auth, email, password).then((userCredential)
+                => { const user = userCredential.user; set(ref(database, 'users/' + user.uid), { username: username, email: email }) alert('user created!'); }).catch((error) => {
+                    const errorCode = error.code; const errorMessage = error.message; alert(errorMessage);
+                });
+        }); login.addEventListener('click', (e) => {
+            var email = document.getElementById('email').value; var password = document.getElementById('password').value; signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
+                const user
+                    = userCredential.user; const dt = new Date(); update(ref(database, 'users/' + user.uid), { last_login: dt, }) &alert('User loged in!');
+            }).catch((error) => { const errorCode = error.code; const errorMessage = error.message; alert(errorMessage); });
+        }); const user = auth.currentUser; onAuthStateChanged(auth, (user) => { if (user) { const uid = user.uid; } else { } }); logout.addEventListener('click', (e) => {
+            signOut(auth).then(() => { alert('user loged out'); }).catch((error) => {
+                const errorCode
+                    = error.code; const errorMessage = error.message; alert(errorMessage);
+            });
+        });
+
+</script>
+
+</html>
