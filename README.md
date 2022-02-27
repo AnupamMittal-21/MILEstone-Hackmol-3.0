@@ -28,5 +28,22 @@ The project may be extended for other colleges too.
 
 ### Images
 
+![](Screenshots_of_project/ss1.png)
+![](Screenshots_of_project/ss2.png)
+![](Screenshots_of_project/ss3.png)
+![](Screenshots_of_project/ss4.png)
+![](Screenshots_of_project/ss5.png)
+![](Screenshots_of_project/ss6.png)
+![](Screenshots_of_project/ss7.png)
+![](Screenshots_of_project/ss8.png)
+![](Screenshots_of_project/ss9.png)
+![](Screenshots_of_project/ss10.png)
+
+Video link/embed
+
+https://youtu.be/eqnYLnzTqgs
+
+Thank You 
+
 
 
